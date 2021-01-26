@@ -1,0 +1,120 @@
+.social-btns {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 0;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .btn {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+      background-color: $color-white;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 28%;
+      box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+      opacity: 0.99;
+      &:before {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.31,
+          -0.105,
+          0.43,
+          1.59
+        );
+        transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        top: 90%;
+        left: -110%;
+        content: "";
+        width: 120%;
+        height: 120%;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .fab {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.31,
+          -0.105,
+          0.43,
+          1.59
+        );
+        transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        vertical-align: middle;
+        font-size: 20px;
+      }
+      &:focus {
+        &:before {
+          top: -10%;
+          left: -10%;
+        }
+        .fab {
+          color: $color-white;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      &:hover {
+        &:before {
+          top: -10%;
+          left: -10%;
+        }
+        .fab {
+          color: $color-white;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+    }
+    .facebook {
+      &:before {
+        background-color: #3b5998;
+      }
+      .fab {
+        color: #3b5998;
+      }
+    }
+    .twitter {
+      &:before {
+        background-color: #3cf;
+      }
+      .fab {
+        color: #3cf;
+      }
+    }
+    .google {
+      &:before {
+        background-color: #dc4a38;
+      }
+      .fab {
+        color: #dc4a38;
+      }
+    }
+    .dribbble {
+      &:before {
+        background-color: #f26798;
+      }
+      .fab {
+        color: #f26798;
+      }
+    }
+    .skype {
+      &:before {
+        background-color: #00aff0;
+      }
+      .fab {
+        color: #00aff0;
+      }
+    }
+  }

@@ -1,0 +1,105 @@
+.article-detail {
+  header {
+    .entry-title {
+      font-size: 50px;
+      // font-family: $font-family-Regular;
+    }
+    .entry-author,
+    .entry-time {
+      font-size: 14px;
+    }
+  }
+  .Post-comments {
+    .author-area {
+      .comment-count {
+        border-bottom: 1px solid;
+        border-color: $color-btn;
+        margin: 25px 20px;
+        span {
+          background-color: $color-btn;
+          border-top-right-radius: 0.25rem;
+          border-top-left-radius: 0.25rem;
+          text-decoration: none;
+          color: $color-white;
+          padding: 10px 20px;
+          width: 50%;
+          position: relative;
+          top: -6px;
+          font-size: 13px;
+        }
+      }
+      .comment_group {
+        margin-bottom: 40px;
+        .author-media {
+          margin-bottom: 0px;
+          text-align: center;
+          .card-img {
+            width: 50%;
+          }
+        }
+        .header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-content: center;
+          h4,
+          h6 {
+            font-size: 12px;
+          }
+          h4 {
+            font-weight: bolder;
+            color: #000;
+            span {
+              color: green;
+              font-weight: normal;
+              margin-left: 8px;
+            }
+          }
+        }
+        .body {
+          p {
+            font-size: 12px;
+            text-align: justify;
+            margin-bottom: 0;
+          }
+        }
+        .footer {
+          .reply_group {
+            .reply_header {
+              .btn-link {
+                font-size: 12px;
+                color: $color-para;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .card-footer,
+  .reply_group {
+    label {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .btn-submit {
+      line-height: 1.5;
+      border-radius: 0.25rem;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border: 1px solid;
+      border-color: $color-btn;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      background-color: $color-btn;
+      color: $color-white;
+      font-size: 14px;
+      padding: 6px 24px;
+    }
+  }
+}
